@@ -6,6 +6,92 @@ body
 h2,h3 
   margin: 0
   padding: 0
+a 
+  color: #bcbcbc
+button
+  &:active, &:focus, &:hover
+    outline: none
+    
+.menu
+  display: flex
+  width: 1022px
+  margin: 0 auto
+  height: 50px
+  box-shadow: 0px 7px 5px 3px rgba(83, 88, 105, 0.1)
+  text-transform: uppercase
+  font-size: 14px
+.header
+  &-button 
+    &__left
+      width: 100px
+      color: #fff 
+      text-transform: uppercase
+      cursor: pointer
+      background-color: #7fa822
+      font-size: 14px
+      transition: all 0.4s ease
+      &:hover 
+        color: #0056b3
+        background-color: darken(#7fa822, 2)
+        transition: all 0.4s ease
+    &__right
+      width: 50px
+      color: #fff 
+      text-transform: uppercase
+      cursor: pointer
+      background-color: #97c352
+      font-size: 14px
+      transition: all 0.4s ease
+      &:hover 
+        color: #0056b3
+        background-color: lighten(#7fa822, 2)
+        transition: all 0.4s ease
+.decoration  
+  &::after
+    content: ''
+    border-right: 1px solid #bcbcbc
+    padding-left: 10px
+    height: 50px
+// dropdown button
+.dropbtn
+  background-color: #fff;
+  color: #bcbcbc
+  padding: 8px
+  font-size: 16px
+  text-transform: uppercase
+  border: none
+  cursor: pointer
+  &:hover
+    color: #0056b3
+.dropdown 
+  position: relative
+  display: inline-block
+  &-content
+    display: none
+    position: absolute
+    background-color: #fff
+    min-width: 100px
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+    z-index: 1
+    a 
+      color: #bcbcbc
+      padding: 12px 16px
+      text-decoration: none
+      display: block
+      &:hover
+        color: #0056b3
+.show
+  display: block
+// ---------------------------------------------------------------
+.second
+  background: #ebebeb
+  min-width: 1022px
+  width: 100%
+  margin-top: 17px
+  display: flex
+  justify-content: space-between
+.right
+  margin-left: 50px
 .payment
   padding-top: 25px
   padding-bottom: 19px
@@ -126,6 +212,20 @@ h2,h3
     padding-right: 12px
     background-color: #fff
     border: 1px solid rgba(0, 0, 0, 0.1)
+.checkout
+  margin-top: 37px
+  &-mr 
+    margin-left: 15px
+  &-btn 
+    width: 303px
+    height: 54px
+    margin-top: 19px
+    background: #62C02C
+    border-radius: 5px
+    border-color: #62C02C
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
 .price
   display: flex
   justify-content: space-between
